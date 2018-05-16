@@ -13,7 +13,7 @@ class UserRepository private constructor() {
     companion object {
         private var webservice: Webservice;
         private var retrofit: Retrofit = Retrofit.Builder()
-                // replace it for your self api server
+                // replace it for your api server
                 .baseUrl("http://10.5.16.64:8080/")
                 .addConverterFactory(FastJsonConverterFactory.create())
                 .build()
